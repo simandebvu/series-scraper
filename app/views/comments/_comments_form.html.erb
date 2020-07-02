@@ -1,0 +1,14 @@
+<h5>Add Comment</h5>
+<%= form_for( [@show, @show.comments.build]) do |f| %>
+<p>
+    <%= f.label :username %><br>
+    <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+    <%= f.label :body %><br>
+    <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+    <%= f.submit({:class => 'btn btn-default'}) %><br>
+</p>
+<% end %>

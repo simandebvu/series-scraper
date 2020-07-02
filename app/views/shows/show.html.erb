@@ -1,0 +1,10 @@
+<p>
+<h3><%= @show.title %> </h3>
+<%= link_to  "Edit", edit_show_path(@show), :class => 'text-primary' %>
+<%= link_to  "Delete", show_path(@show), method: :delete, data: { confirm:'Are you sure?'}, :class => 'text-danger' %>
+<hr>
+</p>
+
+<%= render  "comments/comments" %>
+<%= render  "comments/comments_form" %>
+

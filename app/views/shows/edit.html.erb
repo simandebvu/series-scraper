@@ -1,0 +1,14 @@
+<h1>Edit Show</h1>
+<%= form_for :show, url: show_path(@show), method: :patch do |s| %>
+<% if @show.errors.any? %>
+    <% @show.errors.full_messages.each do |e| %>
+    <div class = 'alert alert-danger'><%= e %></div>
+    <% end %>
+<% end %>
+<p>
+    <%= s.text_field  :title, {class: 'form-control' }  %></br>
+</p>
+<p>
+<%= s.submit({class: 'btn btn-danger' })  %>
+</p>
+<% end %>

@@ -1,0 +1,14 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Series Scraper</h1>
+    <p class="lead">Making your entertainment more efficient.</p>
+  </div>
+</div>
+
+<h1>Current TV Shows</h1>
+<ul class="list-group list-group-flush">
+<% @shows.each do |show| %>
+    <%= link_to show.title, show_path(show), :class => 'list-group-item' %>
+
+<% end %>
+</ul>
