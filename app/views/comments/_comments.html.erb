@@ -1,0 +1,9 @@
+<h4>Comments</h4>
+<% @show.comments.each do |comment| %>
+<blockquote class="blockquote text-center">
+    <p class="mb-0"><%= comment.body %><%= link_to  "[X]", [comment.show, comment], method: :delete, data: {confirm: "Are you sure?"}, :class => 'text-danger' %></p>
+    <footer class="blockquote-footer">Commented by <cite title="Source Title"><%= comment.username %></cite></footer>
+</blockquote>
+
+
+<% end %>
