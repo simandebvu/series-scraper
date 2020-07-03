@@ -1,0 +1,4 @@
+db_password: password1
+
+production:
+  db_password: password1
