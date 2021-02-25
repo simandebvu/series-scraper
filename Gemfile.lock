@@ -87,7 +87,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.10.1)
+    jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     loofah (2.9.0)
       crass (~> 1.0.2)
@@ -100,7 +100,7 @@ GEM
     mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
-    minitest (5.14.3)
+    minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.5)
     nokogiri (1.11.1)
@@ -215,7 +215,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   figaro
-  jbuilder (~> 2.10)
+  jbuilder (~> 2.11)
   pg
   puma (~> 5.0)
   rails (~> 6.1.3)
