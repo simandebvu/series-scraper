@@ -13,7 +13,7 @@ gem 'pg'
 gem 'rails_12factor', group: :production
 gem "figaro"
 # Use Puma as the app server
-gem 'puma', '~> 5.3'
+gem 'puma', '~> 5.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
